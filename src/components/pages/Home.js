@@ -2,14 +2,15 @@ import React from 'react';
 import '../../App.css';
 import Cards from '../Cards';
 import HeroSection from '../HeroSection';
-import Footer from '../Footer';
+// import Members from '../Members'
+
 
 function Home() {
 return (
     <>
     <HeroSection />
     <Cards />
-    <Footer />
+    {/* <Members /> */}
     </>
 );
 }

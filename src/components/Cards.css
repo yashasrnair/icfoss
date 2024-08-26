@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Material Design Icons';
+    src: url('https://fonts.gstatic.com/s/materialdesignicons/v5/materialdesignicons-v5-latin-regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css');
 .cards {
     padding: 4rem;
     background: #fff;
@@ -22,13 +29,15 @@ h1 {
 }
 
 .cards__items {
-    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 20px;
 }
 
 .cards__item {
-    display: flex;
-    flex: 1;
-    margin: 0 1rem;
+    flex: 0 0 auto;
+    margin: 0 10px;
     border-radius: 10px;
 }
 
@@ -74,7 +83,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    bottom: 0;
+    bottom: 10;
     left: 0;
     display: block;
     width: 100%;
@@ -99,6 +108,103 @@ h1 {
     line-height: 24px;
 }
 
+
+.carousel {
+    position: relative;
+    padding-bottom: 30px;
+    /* add some space for the navigation */
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    /* make the carousel inner container scrollable */
+    padding: 20px;
+    /* add some padding to the carousel inner container */
+}
+
+.carousel-item {
+    flex: 0 0 auto;
+    width: 300px;
+    /* adjust the width to your liking */
+    margin: 10px;
+    border-radius: 10px;
+    /* add some border radius to the carousel items */
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+    /* add some box shadow to the carousel items */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 150px;
+    /* adjust the height to your liking */
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    /* add some border radius to the top of the image */
+}
+
+.carousel-item .carousel-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    /* add some border radius to the bottom of the caption */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    z-index: 1;
+    /* make sure the navigation buttons are on top of the carousel items */
+}
+
+.carousel-control-prev {
+    left: 10px;
+}
+
+.carousel-control-next {
+    right: 10px;
+}
+
+.carousel-control-prev::before,
+.carousel-control-next::before {
+    font-family: 'Material Design Icons';
+    font-size: 24px;
+}
+
+.carousel-control-prev::before {
+    content: '\F141';
+    /* mdi-chevron-left */
+    font-family: 'Material Design Icons';
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.carousel-control-next::before {
+    content: '\F142';
+    /* mdi-chevron-right */
+    font-family: 'Material Design Icons';
+    font-size: 24px;
+    font-weight: normal;
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: #ddd;
+}
 @media only screen and (min-width: 1200px) {
     .content__blog__container {
         width: 84%;

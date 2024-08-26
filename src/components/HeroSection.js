@@ -5,27 +5,22 @@ import './HeroSection.css';
 
 function HeroSection() {
 return (
-    <div className='hero-container'>
-    <h1>ADVENTURE AWAITS</h1>
-    <p>What are you waiting for?</p>
-    <div className='hero-btns'>
-        <Button
-        className='btns'
-        buttonStyle='btn--outline'
-        buttonSize='btn--large'
-        >
-        GET STARTED
-        </Button>
-        <Button
-        className='btns'
-        buttonStyle='btn--primary'
-        buttonSize='btn--large'
-        onClick={console.log('hey')}
-        >
-        WATCH TRAILER <i className='far fa-play-circle' />
-        </Button>
+  <div className="hero-container">
+    <h1>
+      Igniting Open Source Excellence at College of Engineering Kalloparaa
+    </h1>
+    <p>Join the ICFOSS Club for Innovation and Collaboration</p>
+    <div className="hero-btns">
+      <Button
+        className="btns"
+        buttonStyle="btn--outline"
+        buttonSize="btn--large"
+      >
+        JOIN NOW
+      </Button>
+      
     </div>
-    </div>
+  </div>
 );
 }
 
