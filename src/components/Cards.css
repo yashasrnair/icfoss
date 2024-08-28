@@ -4,14 +4,13 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css');
+
 .cards {
     padding: 4rem;
     background: #fff;
-}
-
-h1 {
-    text-align: center;
+    text-align: -webkit-center;
 }
 
 .cards__container {
@@ -19,6 +18,10 @@ h1 {
     flex-flow: column;
     align-items: center;
     max-width: 1120px;
+    max-height: calc(100vh - 64px);
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding: 20px;
     width: 90%;
     margin: 0 auto;
 }
@@ -26,28 +29,53 @@ h1 {
 .cards__wrapper {
     position: relative;
     margin: 50px 0 45px;
+    display: flex;
+    width: 100%;
+    overflow-x: hidden;
+        /* make the wrapper a flex container */
+        flex-wrap: wrap;
+        /* allow the cards to wrap to the next line */
+        justify-content: center;
+        /* center the cards horizontally */
+    
 }
-
+.marquee {
+    width: 100%;
+    /* make the marquee full width */
+    overflow-x: hidden;
+    /* add this to prevent horizontal scrolling */
+    
+}
 .cards__items {
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
-    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    white-space: nowrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .cards__item {
     flex: 0 0 auto;
-    margin: 0 10px;
+    flex-wrap: nowrap;
+    margin: 20px;
     border-radius: 10px;
+    width: 200px;
+        /* adjust the width of the card */
+    margin: 10px;
+        /* add some margin between cards */
+    
+    transform: perspective(1000px) rotateY(45deg);
+    transition: transform 0.5s;
+    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
 }
 
 .cards__item__link {
     display: flex;
     flex-flow: column;
     width: 100%;
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
-    filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     border-radius: 10px;
     overflow: hidden;
     text-decoration: none;
@@ -56,27 +84,9 @@ h1 {
 .cards__item__pic-wrap {
     position: relative;
     width: 100%;
+    height: 150px;
     padding-top: 67%;
     overflow: hidden;
-}
-
-.fade-img {
-    animation-name: fade-img;
-    animation-duration: 2s;
-}
-
-.cards__item__pic-wrap::after {
-    content: attr(data-category);
-    position: absolute;
-    bottom: 0;
-    margin-left: 10px;
-    padding: 6px 8px;
-    max-width: calc((100%) - 60px);
-    font-size: 12px;
-    font-weight: 700;
-    color: #fff;
-    background-color: #1f98f4;
-    box-sizing: border-box;
 }
 
 .cards__item__img {
@@ -93,118 +103,37 @@ h1 {
     object-fit: cover;
     transition: all 0.2s linear;
 }
+.cards__item__pic-wrap {
+    position: relative;
+    /* add this */
+}
 
-.cards__item__img:hover {
-    transform: scale(1.1);
+.cards__item__label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+}
+.cards__item:hover {
+    transform: perspective(1000px) rotateY(0deg);
 }
 
 .cards__item__info {
-    padding: 20px 30px 30px;
+    padding: 10px;
 }
 
 .cards__item__text {
     color: #252e48;
     font-size: 18px;
     line-height: 24px;
+    
 }
 
-
-.carousel {
-    position: relative;
-    padding-bottom: 30px;
-    /* add some space for the navigation */
-}
-
-.carousel-inner {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    /* make the carousel inner container scrollable */
-    padding: 20px;
-    /* add some padding to the carousel inner container */
-}
-
-.carousel-item {
-    flex: 0 0 auto;
-    width: 300px;
-    /* adjust the width to your liking */
-    margin: 10px;
-    border-radius: 10px;
-    /* add some border radius to the carousel items */
-    box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
-    /* add some box shadow to the carousel items */
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 150px;
-    /* adjust the height to your liking */
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    /* add some border radius to the top of the image */
-}
-
-.carousel-item .carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    border-radius: 0 0 10px 10px;
-    /* add some border radius to the bottom of the caption */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    font-size: 24px;
-    text-align: center;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 1;
-    /* make sure the navigation buttons are on top of the carousel items */
-}
-
-.carousel-control-prev {
-    left: 10px;
-}
-
-.carousel-control-next {
-    right: 10px;
-}
-
-.carousel-control-prev::before,
-.carousel-control-next::before {
-    font-family: 'Material Design Icons';
-    font-size: 24px;
-}
-
-.carousel-control-prev::before {
-    content: '\F141';
-    /* mdi-chevron-left */
-    font-family: 'Material Design Icons';
-    font-size: 24px;
-    font-weight: normal;
-}
-
-.carousel-control-next::before {
-    content: '\F142';
-    /* mdi-chevron-right */
-    font-family: 'Material Design Icons';
-    font-size: 24px;
-    font-weight: normal;
-}
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
-    background-color: #ddd;
-}
 @media only screen and (min-width: 1200px) {
     .content__blog__container {
         width: 84%;
@@ -214,6 +143,7 @@ h1 {
 @media only screen and (min-width: 1024px) {
     .cards__items {
         display: flex;
+        flex-wrap: nowrap;
     }
 }
 
