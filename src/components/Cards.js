@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 import Marquee from "react-fast-marquee";
@@ -11,7 +11,7 @@ function Cards() {
       <div className="cards__container">
         <div className="cards__wrapper">
           <ul className="cards__items">
-            <Marquee autoFill='True'>
+            {/* <Marquee autoFill='True'> */}
               <CardItem
                 src="/images/mem1.jpg"
                 text="Explore the hidden waterfall deep inside the Amazon Jungle"
@@ -78,7 +78,7 @@ function Cards() {
                 label="Adrenaline"
                 path="/sign-up"
               />
-            </Marquee>
+            {/* </Marquee> */}
           </ul>
         </div>
       </div>

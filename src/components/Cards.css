@@ -40,8 +40,7 @@
     
 }
 .marquee {
-    width: 100%;
-    /* make the marquee full width */
+    
     overflow-x: hidden;
     /* add this to prevent horizontal scrolling */
     
