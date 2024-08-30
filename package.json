@@ -12,7 +12,7 @@
     "react-dom": "^18.3.1",
     "react-fast-marquee": "^1.6.5",
     "react-router-dom": "^6.26.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-window": "^1.8.10",
     "web-vitals": "^2.1.4"
   },
@@ -21,7 +21,6 @@
     "build": "react-scripts build --max_old_space_size=8192",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-    
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
