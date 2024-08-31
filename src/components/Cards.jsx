@@ -9,8 +9,8 @@ function Cards() {
       <h1>Check out these EPIC Destinations!</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
-          <Marquee direction="left" // Set direction to "left" for scrolling
-            pauseOnHover // Pause animation when hovering over the marquee
+          <Marquee direction="left" 
+            pauseOnHover 
             velocity={1}>
           <ul className="cards__items">
               <CardItem
