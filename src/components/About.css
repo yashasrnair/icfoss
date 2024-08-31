@@ -1,0 +1,77 @@
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100vw;
+}
+
+.about-us-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    max-width: 80vw;
+    /* Add this line */
+    width: 100%;
+}
+
+.CardAb {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CardAb img {
+    max-width: 440px;
+    /* Increase the image size */
+    max-height: 331px;
+    /* Increase the image size */
+    object-fit: cover;
+    width:stretch ;
+    height: stretch;
+    border-radius: 10px;
+    margin-right: 50px;
+    margin-left: 80px;
+}
+
+.CardAb .text-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.CardAb .text {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    max-width: 400px;
+    /* Add a max-width to wrap the text */
+    min-height: 100px;
+    /* Add a min-height to ensure a minimum height */
+}
+
+.CardAb .label {
+    font-size: 18px;
+    /* Reduce the font size */
+    color: #666;
+    max-width: 400px;
+        /* Add a max-width to wrap the text */
+        min-height: 100px;
+        /* Add a min-height to ensure a minimum height */
+}
+
+.CardAb .text,
+.CardAb .label {
+    text-align: left;
+}
