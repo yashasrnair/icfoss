@@ -7,6 +7,19 @@
 
 @import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css');
 
+
+.cards__wrapper {
+    /* Adjust width and overflow as needed */
+    width: 100%;
+    /* Ensure enough width for scrolling */
+    overflow-x: hidden;
+    /* Hide horizontal scrollbar if desired */
+}
+
+.cards__items {
+    white-space: nowrap;
+    /* Prevent wrapping of cards */
+}
 .cards {
     padding: 4rem;
     background: #fff;

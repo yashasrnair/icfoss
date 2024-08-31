@@ -1,8 +1,7 @@
-import React,{memo} from "react";
+import React from "react";
 import "./Cards.css";
 import CardItem from "./CardItem";
 import Marquee from "react-fast-marquee";
-// import Carousel from "react-bootstrap/Carousel";  https://jj5vh794-3000.inc1.devtunnels.ms/
 
 function Cards() {
   return (
@@ -10,8 +9,10 @@ function Cards() {
       <h1>Check out these EPIC Destinations!</h1>
       <div className="cards__container">
         <div className="cards__wrapper">
+          <Marquee direction="left" // Set direction to "left" for scrolling
+            pauseOnHover // Pause animation when hovering over the marquee
+            velocity={1}>
           <ul className="cards__items">
-            {/* <Marquee autoFill='True'> */}
               <CardItem
                 src="/images/mem1.jpg"
                 text="Explore the hidden waterfall deep inside the Amazon Jungle"
@@ -78,8 +79,8 @@ function Cards() {
                 label="Adrenaline"
                 path="/sign-up"
               />
-            {/* </Marquee> */}
           </ul>
+          </Marquee>
         </div>
       </div>
     </div>
