@@ -1,0 +1,27 @@
+.events__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+}
+
+.custom-overlay__caption {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.534);
+    color: white;
+}
+
+.gallery {
+    display: block;
+    margin: 60px auto 0 auto;
+    /* added margin-top to increase gap */
+    max-width: 400px;
+    /* adjust the width as per your requirement */
+}
+.h1{
+    font-size: 30px;
+    margin-bottom: 20%;
+}
+
+
+

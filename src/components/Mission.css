@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 20px;
     width: 100vw;
+    
 }
 
 .mission-card {
@@ -31,15 +32,15 @@
 }
 
 .CardVM img {
-    max-width: 440px;
+    max-width: 250px;
     /* Increase the image size */
-    max-height: 331px;
+    max-height: 355px;
     /* Increase the image size */
     object-fit: cover;
     width:stretch ;
     height: stretch;
     border-radius: 10px;
-    margin-right: 50px;
+    margin-right: 255px;
     margin-left: 80px;
 }
 

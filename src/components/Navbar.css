@@ -10,23 +10,26 @@
     z-index: 999;
 }
 
+
 .navbar-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 80px;
     max-width: 1500px;
+    width:100%;
 }
 
 .navbar-logo {
     color: #fff;
     justify-self: start;
-    margin-left: 20px;
+    margin-left: 50px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .fa-typo3 {
@@ -35,7 +38,7 @@
 }
 
 .nav-menu {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
@@ -43,10 +46,11 @@
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
+    overflow-y: hidden;
 }
 
 .nav-item {
-    height: 80px;
+    margin-right: 20px;
 }
 
 .nav-links {

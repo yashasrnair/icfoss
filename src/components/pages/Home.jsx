@@ -4,6 +4,7 @@ import Cards from '../Cards';
 import HeroSection from '../HeroSection';
 import About from '../About';
 import Mission from '../Mission'
+import Events from '../Events';
 // import Team from "../team"
 // import Members from '../Members'
 
@@ -16,6 +17,7 @@ return (
     <Mission />
     {/* <Team /> */}
     <Cards />
+    <Events />
     {/* <Members /> */}
     </>
 );
