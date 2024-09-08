@@ -8,7 +8,7 @@ return (
     <div className='footer-container'>
     <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-        Join the Adventure newsletter to receive our best vacation deals
+        Join the Adventure newsletter to receive our key to the Future
         </p>
         <p className='footer-subscription-text'>
         You can unsubscribe at any time.
@@ -25,54 +25,19 @@ return (
         </form>
         </div>
     </section>
-    <div className='footer-links'>
-        <div className='footer-link-wrapper'>
-        <div className='footer-link-items'>
-            <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
-            <Link to='/'>Testimonials</Link>
-            <Link to='/'>Careers</Link>
-            <Link to='/'>Investors</Link>
-            <Link to='/'>Terms of Service</Link>
-        </div>
-        <div className='footer-link-items'>
-            <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
-            <Link to='/'>Support</Link>
-            <Link to='/'>Destinations</Link>
-            <Link to='/'>Sponsorships</Link>
-        </div>
-        </div>
-        <div className='footer-link-wrapper'>
-        <div className='footer-link-items'>
-            <h2>Videos</h2>
-            <Link to='/'>Submit Video</Link>
-            <Link to='/'>Ambassadors</Link>
-            <Link to='/'>Agency</Link>
-            <Link to='/'>Influencer</Link>
-        </div>
-        <div className='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
-        </div>
-        </div>
-    </div>
     <section className='social-media'>
         <div className='social-media-wrap'>
         <div className='footer-logo'>
             <Link to='/' className='social-logo'>
-            TRVL
+            ICFOSS.CEK
             <i className='fab fa-typo3' />
             </Link>
         </div>
-        <small className='website-rights'>TRVL © 2020</small>
+        <small className='website-rights'>ICFOSS.CEK #WebTeam © 2024</small>
         <div className='social-icons'>
             <Link
             className='social-icon-link facebook'
-            to='/'
+            to='https://www.facebook.com/ICFOSS/'
             target='_blank'
             aria-label='Facebook'
             >
@@ -80,7 +45,7 @@ return (
             </Link>
             <Link
             className='social-icon-link instagram'
-            to='/'
+            to='https://www.instagram.com/icfoss.in/'
             target='_blank'
             aria-label='Instagram'
             >
@@ -88,7 +53,7 @@ return (
             </Link>
             <Link
             className='social-icon-link youtube'
-            to='/'
+            to='https://www.youtube.com/channel/UCskKbOu_s_VxcK7QOfbvb4w'
             target='_blank'
             aria-label='Youtube'
             >
@@ -96,7 +61,7 @@ return (
             </Link>
             <Link
             className='social-icon-link twitter'
-            to='/'
+            to='https://x.com/i/flow/login?redirect_after_login=%2Ffosskerala'
             target='_blank'
             aria-label='Twitter'
             >
@@ -104,7 +69,7 @@ return (
             </Link>
             <Link
             className='social-icon-link twitter'
-            to='/'
+            to='https://in.linkedin.com/company/icfoss'
             target='_blank'
             aria-label='LinkedIn'
             >
