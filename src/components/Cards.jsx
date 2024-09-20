@@ -33,7 +33,7 @@ function Cards() {
               />
               <CardItem
                 src="/images/mem9(1).jpg"
-                text="Experience Football on Top of the Himilayan Mountains"
+                text="Anamika U R"
                 label="Chief-Ambassador"
                 path="/"
               />
