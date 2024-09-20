@@ -5,7 +5,6 @@
     justify-content: center;
     padding: 20px;
     width: 100vw;
-    
 }
 
 .mission-card {
@@ -15,7 +14,6 @@
     justify-content: space-between;
     margin: 20px;
     max-width: 80vw;
-    /* Add this line */
     width: 100%;
 }
 
@@ -33,17 +31,18 @@
 
 .CardVM img {
     max-width: 250px;
-    /* Increase the image size */
     max-height: 355px;
-    /* Increase the image size */
-    object-fit: cover;
-    width:stretch ;
-    height: stretch;
+    object-fit: contain;
+    width: 100%;
+    /* Make the image width 100% of its parent */
+    height: auto;
+    /* Make the image height auto to maintain aspect ratio */
     border-radius: 10px;
-    margin-right: 255px;
-    margin-left: 80px;
+    margin-right: 150px;
+    /* Reduce the margin to make the image smaller */
+    margin-left: 0px;
+    /* Reduce the margin to make the image smaller */
 }
-
 .CardVM .text-container {
     background-color: #fff;
     padding: 20px;
@@ -55,24 +54,102 @@
 .CardVM .text {
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    /* Reduced from 10px to 5px */
     max-width: 400px;
-    /* Add a max-width to wrap the text */
     min-height: 100px;
-    /* Add a min-height to ensure a minimum height */
 }
 
 .CardVM .label {
     font-size: 18px;
-    /* Reduce the font size */
     color: #666;
     max-width: 400px;
-        /* Add a max-width to wrap the text */
-        min-height: 100px;
-        /* Add a min-height to ensure a minimum height */
+    min-height: 100px;
 }
 
 .CardVM .text,
 .CardVM .label {
     text-align: left;
+}
+
+/* Media queries for responsiveness */
+
+/* For screens smaller than 1200px */
+@media (max-width: 1200px) {
+    .CardVM img {
+        max-width: 200px;
+        max-height: 280px;
+    }
+
+    .CardVM .text-container {
+        padding: 15px;
+    }
+
+    .CardVM .text,
+    .CardVM .label {
+        font-size: 16px;
+    }
+}
+
+/* For screens smaller than 992px */
+@media (max-width: 992px) {
+    .CardVM {
+        flex-direction: column;
+    }
+
+    .CardVM img {
+        max-width: 100%;
+        height: auto;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .CardVM .text-container {
+        padding: 10px;
+    }
+
+    .CardVM .text,
+    .CardVM .label {
+        font-size: 14px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .mission-card {
+        margin: 10px;
+    }
+
+    .CardVM {
+        padding: 10px;
+    }
+
+    .CardVM .text-container {
+        padding: 5px;
+    }
+
+    .CardVM .text,
+    .CardVM .label {
+        font-size: 12px;
+    }
+}
+
+/* For screens smaller than 480px */
+@media (max-width: 480px) {
+    .mission-card {
+        margin: 5px;
+    }
+
+    .CardVM {
+        padding: 5px;
+    }
+
+    .CardVM .text-container {
+        padding: 2px;
+    }
+
+    .CardVM .text,
+    .CardVM .label {
+        font-size: 10px;
+    }
 }

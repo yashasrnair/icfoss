@@ -1,6 +1,15 @@
 import React from 'react';
 import '../../App.css';
+import HeroS from '../hsection';
+import MembershipForm from '../form';
 
-export default function SignUp() {
-return <h1 className='sign-up'>LIKE & SUBSCRIBE</h1>;
+function SignUp() {
+return (
+    <>
+    <HeroS />
+    <MembershipForm />
+    </>
+);
 }
+
+export default SignUp;

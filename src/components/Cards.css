@@ -8,6 +8,7 @@
 @import url('https://cdn.jsdelivr.net/npm/@mdi/font@5.9.55/css/materialdesignicons.min.css');
 
 
+
 .cards__wrapper {
     /* Adjust width and overflow as needed */
     width: 100%;
@@ -53,10 +54,18 @@
     
 }
 .marquee {
-    
+    width: 100vw;
+    /* Set the width to 100% of the viewport width */
+    margin-left: -50vw;
+    /* Set the left margin to -50% of the viewport width */
+    margin-right: -50vw;
+    /* Set the right margin to -50% of the viewport width */
+    padding-left: 50vw;
+    /* Set the left padding to 50% of the viewport width */
+    padding-right: 50vw;
+    /* Set the right padding to 50% of the viewport width */
     overflow-x: hidden;
-    /* add this to prevent horizontal scrolling */
-    
+    /* Keep the horizontal scrollbar hidden */
 }
 .cards__items {
     display: flex;
@@ -150,6 +159,13 @@
     .content__blog__container {
         width: 84%;
     }
+    .marquee {
+        width: 100%; /* Set the width to 100% on smaller screens */
+        margin-left: 0; /* Remove the left margin on smaller screens */
+        margin-right: 0; /* Remove the right margin on smaller screens */
+        padding-left: 0; /* Remove the left padding on smaller screens */
+        padding-right: 0; /* Remove the right padding on smaller screens */
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -157,10 +173,24 @@
         display: flex;
         flex-wrap: nowrap;
     }
+    .marquee {
+        width: 100%; /* Set the width to 100% on smaller screens */
+        margin-left: 0; /* Remove the left margin on smaller screens */
+        margin-right: 0; /* Remove the right margin on smaller screens */
+        padding-left: 0; /* Remove the left padding on smaller screens */
+        padding-right: 0; /* Remove the right padding on smaller screens */
+    }
 }
 
 @media only screen and (max-width: 1024px) {
     .cards__item {
         margin-bottom: 2rem;
+    }
+    .marquee {
+        width: 100%; /* Set the width to 100% on smaller screens */
+        margin-left: 0; /* Remove the left margin on smaller screens */
+        margin-right: 0; /* Remove the right margin on smaller screens */
+        padding-left: 0; /* Remove the left padding on smaller screens */
+        padding-right: 0; /* Remove the right padding on smaller screens */
     }
 }

@@ -14,69 +14,75 @@ function Cards() {
             velocity={1}>
           <ul className="cards__items">
               <CardItem
-                src="/images/mem1.jpg"
-                text="Explore the hidden waterfall deep inside the Amazon Jungle"
-                label="Adventure"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem4.jpg"
-                text="Travel through the Islands of Bali in a Private Cruise"
-                label="Luxury"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem3.jpg"
-                text="Set Sail in the Atlantic Ocean visiting Uncharted Waters"
-                label="Mystery"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem5.jpg"
-                text="Experience Football on Top of the Himilayan Mountains"
-                label="Adventure"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem6.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem7.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
-                path="/"
-              />
-              <CardItem
-                src="/images/mem8.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
+                src="/images/mem11.jpg"
+                text="MS ANITHA JOSE"
+                label="ICFOSS Advisor"
                 path="/"
               />
               <CardItem
                 src="/images/img-1.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
+                text="MS ANILA A"
+                label="ICFOSS Advisor"
                 path="/"
               />
               <CardItem
-                src="/images/img-2.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
+                src="/images/mem5.jpg"
+                text="Abil A Cherian"
+                label="Chief-Ambassador"
                 path="/"
               />
               <CardItem
-                src="/images/img-8.jpg"
-                text="Ride through the Sahara Desert on a guided camel tour"
-                label="Adrenaline"
+                src="/images/mem9(1).jpg"
+                text="Experience Football on Top of the Himilayan Mountains"
+                label="Chief-Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem7.jpg"
+                text="Milan Saji"
+                label="Deputy-Chief-Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem(1).jpg"
+                text="Devendu D"
+                label="Deputy-Chief-Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem6cr.jpg"
+                text="Yashas R Nair"
+                label="Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem8.jpg"
+                text="Joel Biju"
+                label="Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem.jpg"
+                text="Abhijit R Nair"
+                label="Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem4(1).jpg"
+                text="Aarcha Prasannan"
+                label="Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem1(1).jpg"
+                text="Megha Aajith"
+                label="Ambassador"
+                path="/"
+              />
+              <CardItem
+                src="/images/mem2(1).jpg"
+                text="Anjana S V"
+                label="Ambassador"
                 path="/"
               />
           </ul>

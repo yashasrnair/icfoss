@@ -9,6 +9,8 @@ import SignUp from './components/pages/SignUp';
 import About from './components/About';
 import Mission from './components/Mission';
 import Footer from './components/Footer';
+import Cards from './components/Cards';
+import Events from './components/Events';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/" element={<Home />} exact />
           <Route path="/aboutus" element={<About />} />
           <Route path="/mission" element={<Mission />} />
+          <Route path="/team" element={<Cards />} />
+          <Route path="/events" element={<Events />} />
           <Route path="/sign-up" element={<SignUp />} />
         </Routes>
         <Footer />
