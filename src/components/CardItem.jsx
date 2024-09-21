@@ -8,7 +8,7 @@ function CardItem(props) {
       <li className="cards__item">
         <Link className="cards__item__link" to={props.path}>
           <figure className="cards__item__pic-wrap" data-category={props.label}>
-          <LazyLoad height={200}>
+          <LazyLoad height={250}>
             <img className="cards__item__img" alt="members " src={props.src} />
             </LazyLoad>
             <span className="cards__item__label">{props.label}</span>
