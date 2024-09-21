@@ -20,7 +20,7 @@ function Cards() {
                 path="/"
               />
               <CardItem
-                src="/images/img-1.jpg"
+                src="/images/mem12.jpg"
                 text="MS ANILA A"
                 label="ICFOSS Advisor"
                 path="/"
