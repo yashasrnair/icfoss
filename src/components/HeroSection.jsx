@@ -7,7 +7,7 @@ function HeroSection() {
 return (
   <div className="hero-container">
     <h1>
-      Igniting Open Source Excellence at College of Engineering Kalloparaa
+      Igniting Open Source Excellence at College of Engineering Kallooppara
     </h1>
     <p>Join the ICFOSS Club for Innovation and Collaboration</p>
     <div className="hero-btns">
